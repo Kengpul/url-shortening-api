@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 700;
+}
+.navbar-collapse a {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#signup {
+  color: white;
+  background-color: hsl(180, 66%, 49%);
+  border-radius: 25px;
+}
+
+.btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+}
+
+#intro {
+  height: 30rem;
+}
+
+#intro h1 {
+  font-weight: 600;
+}
+#intro p {
+  color: hsl(0, 0%, 75%);
+}
+
+@media (max-width: 991px) {
+  #signup {
+    color: black;
+    background-color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+}
