@@ -34,6 +34,7 @@ body {
 
 #intro {
   height: 30rem;
+  margin-bottom: 100px;
 }
 
 #intro h1 {
@@ -42,11 +43,66 @@ body {
 #intro p {
   color: hsl(0, 0%, 75%);
 }
+.shortener-container {
+  display: flex;
+  justify-content: center;
+}
+#shortener {
+  background-image: url("images/bg-shorten-desktop.svg");
+  background-color: hsl(257, 27%, 26%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 80%;
+  position: absolute;
+  border-radius: 0.25rem;
+}
+
+.form-shortener {
+  position: relative;
+  top: 50%;
+  transform: translateY(120%);
+  left: 4.5%;
+}
+.form-shortener button,
+.form-shortener input {
+  padding: 15px 25px;
+  font-size: 20px;
+  border-radius: 0.25rem;
+}
+.form-shortener button {
+  width: 70%;
+}
+
+#statistics {
+  background-color: hsl(0, 0%, 75%);
+  margin-top: 100px;
+  padding-top: 300px;
+}
+#statistics h2 {
+  font-weight: 600;
+}
 
 @media (max-width: 991px) {
+  #intro {
+    height: 100vh;
+  }
   #signup {
     color: black;
     background-color: white;
+  }
+  .form-shortener {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    transform: translateY(60%);
+    left: 0;
+    margin-bottom: 10px;
+  }
+  .form-shortener button {
+    width: 100%;
   }
 }
 
