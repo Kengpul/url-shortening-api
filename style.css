@@ -78,10 +78,62 @@ body {
 #statistics {
   background-color: hsl(0, 0%, 75%);
   margin-top: 100px;
-  padding-top: 300px;
+  padding: 300px 0 50px;
+}
+.statistics-header {
+  position: relative;
 }
 #statistics h2 {
   font-weight: 600;
+}
+.statistics-container {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 100px 0;
+  position: relative;
+}
+.statistics-box {
+  background-color: white;
+  width: 100%;
+  border-radius: 10px;
+  padding: 70px 30px 30px;
+  position: relative;
+}
+.statistics-box:nth-child(2) {
+  margin-top: 80px;
+}
+.statistics-box:nth-child(3) {
+  margin-top: 160px;
+}
+.statistics-box h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.statistics-box p {
+  font-size: 0.9em;
+  color: hsl(257, 7%, 63%);
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(257, 27%, 26%);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -12%;
+}
+#horizontal-line {
+  background-color: hsl(180, 66%, 49%);
+  width: 90%;
+  height: 10px;
+  position: absolute;
+  bottom: -210%;
 }
 
 @media (max-width: 991px) {
