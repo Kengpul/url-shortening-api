@@ -137,6 +137,23 @@ body {
   bottom: -20rem;
 }
 
+#ad {
+  background-image: url("images/bg-boost-desktop.svg");
+  background-color: hsl(257, 27%, 26%);
+  height: 100%;
+  width: 100%;
+  color: white;
+  padding: 3rem 0;
+}
+#ad h3 {
+  font-weight: 600;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+#ad button {
+  font-size: 1.5em;
+}
+
 @media (max-width: 991px) {
   #intro {
     height: 100vh;
