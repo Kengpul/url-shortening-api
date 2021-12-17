@@ -113,7 +113,8 @@ body {
   font-weight: 600;
   padding-bottom: 10px;
 }
-.statistics-box p {
+.statistics-box p,
+#statistics p {
   font-size: 0.9em;
   color: hsl(257, 7%, 63%);
 }
@@ -133,7 +134,7 @@ body {
   width: 90%;
   height: 10px;
   position: absolute;
-  bottom: -210%;
+  bottom: -20rem;
 }
 
 @media (max-width: 991px) {
@@ -155,6 +156,23 @@ body {
   }
   .form-shortener button {
     width: 100%;
+  }
+  .statistics-container {
+    grid-template-columns: auto;
+    text-align: center;
+  }
+  #horizontal-line {
+    width: 1%;
+    height: 39rem;
+    bottom: -58rem;
+  }
+  .icon {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .statistics-box:nth-child(3) {
+    margin-top: 80px;
   }
 }
 
