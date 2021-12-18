@@ -154,6 +154,47 @@ body {
   font-size: 1.5em;
 }
 
+#footer {
+  background-color: hsl(255, 11%, 22%);
+  color: white;
+  padding: 80px 0;
+  line-height: 1.7em;
+}
+#footer h4 {
+  font-size: 0.9em;
+  padding-bottom: 7px;
+}
+#footer li {
+  font-size: 0.8em;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: 25% 16% 16% 16% 20%;
+  justify-content: center;
+}
+.footer-align {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  color: hsl(0, 0%, 75%);
+}
+.brand h3 {
+  font-size: 2em;
+  font-weight: 600;
+}
+.socials {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
 @media (max-width: 991px) {
   #intro {
     height: 100vh;
@@ -190,6 +231,15 @@ body {
 
   .statistics-box:nth-child(3) {
     margin-top: 80px;
+  }
+
+  .footer-container {
+    grid-template-columns: auto;
+    text-align: center;
+  }
+  .footer-align {
+    align-items: center;
+    padding: 20px 0;
   }
 }
 
