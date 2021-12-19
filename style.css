@@ -75,6 +75,41 @@ body {
   width: 70%;
 }
 
+.mini-card-row {
+  margin: -150px 0 120px;
+}
+.mini-card {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  border-radius: 0.25rem;
+  margin-bottom: 30px;
+}
+.shorten-link {
+  display: flex;
+  justify-content: center;
+}
+#statistics .original-link p,
+#statistics .shorten-link p {
+  margin: auto 10px;
+  font-size: 1.3em;
+}
+#statistics .mini-card .original-link p {
+  color: black;
+}
+#statistics .mini-card .shorten-link p {
+  color: hsl(180, 66%, 49%);
+}
+#statistics .mini-card .shorten-link button {
+  border-radius: 0.25rem;
+  font-size: 1em;
+  width: 7rem;
+  padding: 10px 15px;
+}
+
 #statistics {
   background-color: hsl(0, 0%, 75%);
   margin-top: 100px;
