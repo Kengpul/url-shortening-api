@@ -100,6 +100,10 @@ body {
 #statistics .mini-card .original-link p {
   color: black;
 }
+#statistics .mini-card .original-link {
+  width: 60%;
+  overflow-x: hidden;
+}
 #statistics .mini-card .shorten-link p {
   color: hsl(180, 66%, 49%);
 }
@@ -275,6 +279,30 @@ li {
   .footer-align {
     align-items: center;
     padding: 20px 0;
+  }
+  .mini-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .original-link {
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+  }
+  #statistics .mini-card .original-link {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .shorten-link {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .shorten-link p {
+    padding: 20px 0 10px;
+  }
+  #statistics .mini-card .shorten-link button {
+    width: 100%;
   }
 }
 
