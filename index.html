@@ -102,13 +102,16 @@
         <div class="row">
           <div class="col-lg-8 form-shortener gx-5">
             <input
+              id="shorten-text"
               type="text"
               class="form-control"
               placeholder="Shorten a link here..."
             />
           </div>
           <div class="col-lg-4 form-shortener gx-5">
-            <button class="btn btn-primary">Shorten it!</button>
+            <button id="shorten-submit" class="btn btn-primary">
+              Shorten it!
+            </button>
           </div>
         </div>
       </section>
@@ -117,17 +120,7 @@
     <section id="statistics">
       <div class="container">
         <div class="row d-flex justify-content-center mini-card-row">
-          <div class="col-md-12">
-            <div class="mini-card">
-              <div class="original-link">
-                <p>https://frontendmentor.iohttps://frontendmentor.iohttps://frontendmentor.io</p>
-              </div>
-              <div class="shorten-link">
-                <p>https://rel.ink/k4klyk</p>
-                <button class="btn btn-primary">Copied!</button>
-              </div>
-            </div>
-          </div>
+          <div class="col-md-12 mini-card-column"></div>
         </div>
         <div class="row justify-content-center statistics-header">
           <div class="col-md-5 text-center">
@@ -240,6 +233,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="app.js"></script>
     <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
