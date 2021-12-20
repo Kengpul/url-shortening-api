@@ -67,12 +67,18 @@ body {
 }
 .form-shortener button,
 .form-shortener input {
-  padding: 15px 25px;
+  padding: 13px 25px;
   font-size: 20px;
   border-radius: 0.25rem;
 }
 .form-shortener button {
   width: 70%;
+}
+
+.form-shortener span {
+  color: hsl(0, 87%, 67%);
+  position: absolute;
+  display: block;
 }
 
 .mini-card-row {
@@ -179,6 +185,8 @@ body {
 #ad {
   background-image: url("images/bg-boost-desktop.svg");
   background-color: hsl(257, 27%, 26%);
+  background-position: center;
+  background-size: cover;
   height: 100%;
   width: 100%;
   color: white;
@@ -251,7 +259,12 @@ li {
     left: 0;
     margin-bottom: 10px;
   }
+  .form-shortener span {
+    top: 97%;
+    left: 1.8rem;
+  }
   .form-shortener button {
+    margin-top: 10px;
     width: 100%;
   }
   .statistics-container {
@@ -288,6 +301,7 @@ li {
   .original-link {
     border-bottom: 1px solid black;
     padding-bottom: 20px;
+    text-align: left;
   }
   #statistics .mini-card .original-link {
     width: 100%;
