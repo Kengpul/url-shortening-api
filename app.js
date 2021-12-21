@@ -59,5 +59,13 @@ const displayShortenLink = (original, short) => {
     
     originalLinkParagraph.innerText = original;
     shortenLinkParagraph.innerText = short;
-    button.innerText = "Copy!";
+    button.innerText = "Copy";
+
+    button.addEventListener("click", function() {
+        navigator.clipboard.writeText(shortenLinkParagraph.innerText)
+        button.innerText = "Copied";
+        setTimeout(() => {
+            button.innerText = "Copy";
+        }, 1000)
+    })
 }
